@@ -4,52 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estrutura HTML5</title>
+    <title>NeuroMente</title>
+    <link rel="stylesheet" href="base.css">
 </head>
 <body>
-    <h1> Estrutura básica de um Website</h1>
-    <hr />
-    <ul>
-        <li><a href="#HTML">O que é o HTML?</a></li>
-        <li><a href="#Tags">Algumas tags e suas funções</a></li>
-        <li><a href="#Outras">Outras tags</a></li>
-    </ul>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="index.html">Página inicial</a></li>
+                <li><a href="sobre.html">Sobre a clínica</a></li>
+                <li><a href="horario.html">Horário de Atendimento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
 
-    <h2 id="HTML"> O que é o HTML?</h2>
+        <div class="main">
+            <div class="header">
+                <img src="img_paginicial/1.png" width="200" alt="Slogan NeuroMente">
+                <!-- Aqui vai o seu header -->
+            </div>
+    
+            <div class="content">
+                <!-- Aqui vai o seu conteúdo -->
+                <h1>Clínica de Neurologia NeuroMente</h1>
+                    <p>O seu parceiro dedicado ao cuidado da saúde cerebral e neurológica. Na NeuroMente, nossa equipe de profissionais altamente qualificados e apaixonados está comprometida em fornecer o mais alto nível de atendimento e suporte para pacientes que buscam soluções para problemas neurológicos. Aqui, a saúde do seu cérebro e mente é nossa prioridade número um. </p>
 
-    <p>O HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.</p>
+                <h2>Nossa Missão</h2>
+                    <p>Na Clínica de Neurologia NeuroMente, nossa missão é oferecer atendimento de qualidade excepcional, diagnóstico preciso e tratamento eficaz para uma ampla gama de condições neurológicas. Acreditamos que cada paciente é único, e nossa abordagem é personalizada para atender às necessidades individuais de todos que procuram nossos serviços. Queremos não apenas tratar doenças neurológicas, mas também melhorar a qualidade de vida de nossos pacientes.</p>
 
-    <p> é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo. Um documento é visto como um conjunto de eventos concorrentes dependentes de tempo (como áudio, vídeo, etc.), conectados por hiperligações (em inglês: hyperlink e link). O padrão é independente de outros padrões de processamento de texto em geral.</p>
-    <p>A maioria dos códigos em HTML precisam ter um código de inicialização e um de finalização - são as chamadas Tag's (tag de abertura e tag de fechamento).</p>
+                <h2>Nossos Serviços</h2>    
+                        <ul>
+                            <li><strong>Avaliação Neurológica Abrangente:</strong> Nossos neurologistas realizam avaliações detalhadas para diagnosticar e tratar uma variedade de condições neurológicas.</li>
+                            <li><strong>Tratamento Personalizado:</strong> Desenvolvemos planos de tratamento individualizados para atender às suas necessidades específicas, garantindo que você receba o melhor cuidado possível.</li>
+                            <li><strong>Exames de Imagem:</strong> Contamos com tecnologia de ponta para exames de imagem cerebral, permitindo diagnósticos precisos.</li>
+                            <li><strong>Tratamento de Distúrbios Neurológicos:</strong> Tratamos uma ampla gama de distúrbios neurológicos, desde cefaleias até doenças neurodegenerativas.</li>
+                        </ul>
 
+                <h2>Nossa Equipe</h2>
+                    <p>Na NeuroMente, contamos com uma equipe de neurologistas altamente qualificados, enfermeiros especializados, técnicos em neurofisiologia e neuropsicólogos experientes. Nossa equipe multidisciplinar trabalha em conjunto para garantir que você receba o melhor atendimento possível em todas as etapas do seu tratamento.</p>
 
-    <h2 id="Tags">Algumas tags e suas funções</h2>
+                <h2>Agende uma Consulta</h2>
+                    <p>Se você ou um ente querido está enfrentando desafios neurológicos, convidamos você a agendar uma consulta na Clínica de Neurologia NeuroMente. Estamos aqui para ouvir suas preocupações, responder às suas perguntas e fornecer orientação especializada. Sua saúde cerebral é importante para nós, e estamos prontos para ajudar.</p>
 
-    <ul>
-        <li><b>&lt;h1&gt;,&lt;h2&gt;...&lt;h6&gt;</b>: Tags de título onde variam de tamanho, sendo &lt;h1&gt; o maior e o &lt;h6&gt; o menor.</li>
-        <li><b>&lt;p&gt;</b>: Parágrafo</li>
-        <li><b>&lt;mark&gt;</b>: Marca texto</li>
-        <li><b>&lt;small&gt;</b>: Reduzir o tamanho da fonte de um determinado texto ou palavra.</li>
-        <li><b>&lt;i&gt;</b>: Itálico</li>
-        <li><b>&lt;u&gt;</b>: Utilizada para sublinhar um espaço do texto</li>
-        <li><b>&lt;strong&gt;</b>: Utilizada para destacar conteúdos de grande importancia, deixando-o em "negrito"</li>
-        <li><b>&lt;ol&gt;</b>: Lista ordenada (numérica)</li>
-        <li><b>&lt;ul&gt;</b>: Lista não ordenada (simbolos)</li>
-        <li><b>&lt;a&gt;</b>: Âncora de onde vincular</li>
-        <li><b>&lt;hr&gt;</b>: É utilizado para inserir uma linha horizontal </li>
-        <li>&<b>lt;sub&gt; e >&lt;sup&gt;</b>: marcar fragmentos de texto que devam ser renderizados em alinhamento vertical mais alto em relação ao texto principal</li>
-        <li><b>&lt;blockquote&gt;</b>: Indica que o texto incluído é uma  citação</li>
-
-    </ul>
-
-    <h2 id="Outras">Outras tags</h2>
-    <ul>
-        <li>&lt;font&gt;: É utilizada para modificar o tipo do texto, o tamanho e a cor</li>
-        <li>&lt;del&gt;: É utilizada para identificar o texto que foi excluído de um documento</li>
-        <li>&lt;abbr&gt;: indica uma abreviatura ou sigla</li>
-    </ul>
-
-    <a href="#Estrutura básca de um Website"><small>Voltar para o início</small></a>
-
+                    <p>Na NeuroMente, estamos comprometidos com a busca contínua da excelência em cuidados neurológicos. Sinta-se à vontade para nos contatar e começar sua jornada em direção a uma mente mais saudável e uma vida melhor.</p>
+                        <button><a href="paginicial.html">Agende sua consulta</a></button>
+            </div>
+    
+            <div class="footer">
+                <img src="img_contato/phone.png" width="20" alt="Telefone"> (31)3385-0962<br>
+                <img src="img_contato/wpp.png" width="20" alt="WhatsApp">(31)9 9294-6695<br>
+                <img src="img_contato/email.png" width="20" alt="E-mail">contato@neuromente.com.br<br>
+                <img src="img_contato/localizacao.png" width="20" alt="Localização">Av. Cel. Prates, 376 - SALA 401 - Centro, Montes Claros - MG, 39400-104<br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.0454544062914!2d-43.87240972484991!3d-16.724583684053894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xab53ce7696171f%3A0x2423cd4099b7fcdf!2sCL%C3%8DNICA%20NEUROMENTE!5e0!3m2!1spt-BR!2sbr!4v1695395020822!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- Aqui vai o seu rodapé -->
+            </div>
+        </div>
+    </div>
 </body>
 </html>
